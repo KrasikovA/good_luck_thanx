@@ -1,0 +1,16 @@
+D, [2016-07-17T00:08:20.825664 #31548] DEBUG -- :   [1m[36mDuty Load (1.3ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:08:27.718541 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:08:28.923647 #31548] DEBUG -- :   [1m[36mDuty Load (0.9ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:08:42.979643 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:08:56.340944 #31548] DEBUG -- :   [1m[36mDuty Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "duties" WHERE "duties"."username" = 'hello' LIMIT 1[0m
+D, [2016-07-17T00:08:56.617035 #31548] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:11:39.107211 #31548] DEBUG -- :   [1m[36mDuty Load (0.7ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "ishatalov"]]
+D, [2016-07-17T00:12:06.288310 #31548] DEBUG -- :   [1m[35mDuty Exists (1.1ms)[0m  SELECT  1 AS one FROM "duties" WHERE "duties"."username" = 'test' LIMIT 1
+D, [2016-07-17T00:12:06.630672 #31548] DEBUG -- :   [1m[36mDuty Load (0.8ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:12:35.204207 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:12:39.367878 #31548] DEBUG -- :   [1m[36mDuty Load (0.8ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:13:17.623633 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "ishatalov"]]
+D, [2016-07-17T00:13:23.519438 #31548] DEBUG -- :   [1m[36mDuty Load (0.9ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:15:26.667343 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:20:08.268961 #31548] DEBUG -- :   [1m[36mDuty Load (0.7ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "Vadim_Tsarfin"]]
+D, [2016-07-17T00:20:25.465821 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
