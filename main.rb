@@ -25,7 +25,13 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 		bot.api.send_message(chat_id: message.chat.id, text: "Введите username дежурного") 
 		is_response = true
 	elsif message.text == '/help' 
-		bot.api.send_message(chat_id: message.chat.id, text: "/add_duty - adds new user to mailing list")
+		bot.api.send_message(chat_id: message.chat.id, text: "/add_duty - adds new user to mailing list\n/say_good_luck - says good luck to everyone\n/say_thanx - says thank you to everyone")
+	elsif message.text == '/say_good_luck'
+		bot.api.send_message(chat_id: message.chat.id, text: 'Удачи')
+		bot.api.send_photo(chat_id: message.chat.id, photo: Faraday::UploadIO.new('images/cat_in_helmet.jpg','image/jpeg'))
+	elsif message.text == '/say_thanx'
+		bot.api.send_message(chat_id: message.chat.id, text: 'Спасибо')
+		bot.api.send_photo(chat_id: message.chat.id, photo: Faraday::UploadIO.new('images/sleepy_cat.jpg','image/jpeg'))
 	else
 		current_duty = Duty.find_by(username: message.from.username)
 		if current_duty
@@ -46,3 +52,4 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 	end
   end
 end
+

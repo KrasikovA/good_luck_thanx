@@ -68,3 +68,31 @@ D, [2016-07-17T09:10:04.030371 #7731] DEBUG -- :   [1m[36mDuty Load (0.6ms)[0
 D, [2016-07-17T09:10:04.036026 #7731] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
 D, [2016-07-17T09:10:04.041869 #7731] DEBUG -- :   [1m[36mDuty Load (0.6ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
 D, [2016-07-17T09:10:04.301760 #7731] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:55.874327 #7731] DEBUG -- :   [1m[36mDuty Load (1.1ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T12:11:33.623896 #7731] DEBUG -- :   [1m[35mDuty Load (1.5ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" IS NULL LIMIT 1
+D, [2016-07-17T12:13:10.021625 #7731] DEBUG -- :   [1m[36mDuty Load (1.4ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" IS NULL LIMIT 1[0m
+main.rb:31: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...essage.chat.id, photo: Faraday:UploadIO.new('images/cat_in_h...
+...                               ^
+main.rb:31: syntax error, unexpected ')', expecting keyword_end
+main.rb:34: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...essage.chat.id, photo: Faraday:UploadIO.new('images/sleepy_c...
+...                               ^
+main.rb:34: syntax error, unexpected ')', expecting keyword_end
+main.rb:31: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...essage.chat.id, photo: Faraday:UploadIO.new('images/cat_in_h...
+...                               ^
+main.rb:31: syntax error, unexpected ')', expecting keyword_end
+main.rb:34: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...essage.chat.id, photo: Faraday:UploadIO.new('images/sleepy_c...
+...                               ^
+main.rb:34: syntax error, unexpected ')', expecting keyword_end
+main.rb:33:in `block (2 levels) in <main>': undefined method `send_message' for #<Telegram::Bot::Client:0x1ba6c20> (NoMethodError)
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:40:in `block in fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:35:in `each'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:35:in `fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:27:in `listen'
+	from main.rb:14:in `block in <main>'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:20:in `run'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:13:in `<main>'
