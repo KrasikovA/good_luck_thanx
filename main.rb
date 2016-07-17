@@ -35,7 +35,7 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 				bot.api.send_photo(chat_id: message.chat.id, photo: Faraday::UploadIO.new('images/cat_in_helmet.jpg', 'image/jpeg'))
 				current_duty.update(morning_greeting: false)
 				current_duty.update(evening_greeting: true)
-    			elsif time_values[2] > 8 and time_values[2] < 10 and !duty.morning_greeting and 
+    			elsif time_values[2] > 8 and time_values[2] < 10 and !current_duty.morning_greeting and 
 			  message.text =~ /(закончил|окончил|завершил)/i
       				bot.api.send_message(chat_id: message.chat.id, text: "Спасибо")
 				bot.api.send_photo(chat_id: message.chat.id, photo: Faraday::UploadIO.new('images/sleepy_cat.jpg', 'image/jpeg'))

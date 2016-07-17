@@ -14,3 +14,57 @@ D, [2016-07-17T00:13:23.519438 #31548] DEBUG -- :   [1m[36mDuty Load (0.9ms)[
 D, [2016-07-17T00:15:26.667343 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
 D, [2016-07-17T00:20:08.268961 #31548] DEBUG -- :   [1m[36mDuty Load (0.7ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "Vadim_Tsarfin"]]
 D, [2016-07-17T00:20:25.465821 #31548] DEBUG -- :   [1m[35mDuty Load (0.8ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:37:52.670762 #31946] DEBUG -- :   [1m[36mDuty Load (1.6ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "Vadim_Tsarfin"]]
+D, [2016-07-17T00:38:16.856860 #31946] DEBUG -- :   [1m[35mDuty Load (1.0ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:38:41.067727 #31946] DEBUG -- :   [1m[36mDuty Load (1.0ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:42:11.964856 #31946] DEBUG -- :   [1m[35mDuty Load (0.7ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "Vadim_Tsarfin"]]
+D, [2016-07-17T00:42:25.674980 #31946] DEBUG -- :   [1m[36mDuty Load (0.7ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "Vadim_Tsarfin"]]
+D, [2016-07-17T00:43:07.070590 #31946] DEBUG -- :   [1m[35mDuty Load (0.9ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T00:46:03.128525 #31946] DEBUG -- :   [1m[36mDuty Load (0.7ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "Vadim_Tsarfin"]]
+D, [2016-07-17T00:46:17.379282 #31946] DEBUG -- :   [1m[35mDuty Load (0.7ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "Vadim_Tsarfin"]]
+D, [2016-07-17T00:46:36.549948 #31946] DEBUG -- :   [1m[36mDuty Load (0.8ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T00:46:56.286807 #31946] DEBUG -- :   [1m[35mDuty Load (1.0ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "Vadim_Tsarfin"]]
+/home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/api.rb:66:in `call': Telegram API has returned the error. (error_code: "502", uri: "https://api.telegram.org/bot195607913:AAGeO0qYROQWMAK7xwqY9E-jrPRpTdgE84U/getUpdates") (Telegram::Bot::Exceptions::ResponseError)
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/api.rb:50:in `method_missing'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:32:in `fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:27:in `listen'
+	from main.rb:14:in `block in <main>'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:20:in `run'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:13:in `<main>'
+D, [2016-07-17T09:02:50.335049 #7551] DEBUG -- :   [1m[36mDuty Load (1.4ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+main.rb:38:in `block (2 levels) in <main>': undefined local variable or method `duty' for main:Object (NameError)
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:40:in `block in fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:35:in `each'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:35:in `fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:27:in `listen'
+	from main.rb:14:in `block in <main>'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:20:in `run'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:13:in `<main>'
+D, [2016-07-17T09:03:31.522637 #7680] DEBUG -- :   [1m[36mDuty Load (1.4ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+main.rb:38:in `block (2 levels) in <main>': undefined local variable or method `duty' for main:Object (NameError)
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:40:in `block in fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:35:in `each'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:35:in `fetch_updates'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:27:in `listen'
+	from main.rb:14:in `block in <main>'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:20:in `run'
+	from /home/deployer/.rvm/gems/ruby-2.2.3/gems/telegram-bot-ruby-0.5.2/lib/telegram/bot/client.rb:8:in `run'
+	from main.rb:13:in `<main>'
+D, [2016-07-17T09:10:02.123057 #7731] DEBUG -- :   [1m[36mDuty Load (1.4ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:03.783896 #7731] DEBUG -- :   [1m[35m (0.6ms)[0m  begin transaction
+D, [2016-07-17T09:10:03.838058 #7731] DEBUG -- :   [1m[36mDuty Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "duties" WHERE ("duties"."username" = 'krasikovaf' AND "duties"."id" != 1) LIMIT 1[0m
+D, [2016-07-17T09:10:03.845723 #7731] DEBUG -- :   [1m[35mSQL (1.6ms)[0m  UPDATE "duties" SET "morning_greeting" = ? WHERE "duties"."id" = ?  [["morning_greeting", "t"], ["id", 1]]
+D, [2016-07-17T09:10:03.952643 #7731] DEBUG -- :   [1m[36m (105.1ms)[0m  [1mcommit transaction[0m
+D, [2016-07-17T09:10:03.954148 #7731] DEBUG -- :   [1m[35m (0.5ms)[0m  begin transaction
+D, [2016-07-17T09:10:03.959782 #7731] DEBUG -- :   [1m[36mDuty Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "duties" WHERE ("duties"."username" = 'krasikovaf' AND "duties"."id" != 1) LIMIT 1[0m
+D, [2016-07-17T09:10:03.964926 #7731] DEBUG -- :   [1m[35mSQL (1.3ms)[0m  UPDATE "duties" SET "evening_greeting" = ? WHERE "duties"."id" = ?  [["evening_greeting", "f"], ["id", 1]]
+D, [2016-07-17T09:10:04.006949 #7731] DEBUG -- :   [1m[36m (40.6ms)[0m  [1mcommit transaction[0m
+D, [2016-07-17T09:10:04.012873 #7731] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:04.018881 #7731] DEBUG -- :   [1m[36mDuty Load (0.6ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:04.024446 #7731] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:04.030371 #7731] DEBUG -- :   [1m[36mDuty Load (0.6ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:04.036026 #7731] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:04.041869 #7731] DEBUG -- :   [1m[36mDuty Load (0.6ms)[0m  [1mSELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1[0m  [["username", "krasikovaf"]]
+D, [2016-07-17T09:10:04.301760 #7731] DEBUG -- :   [1m[35mDuty Load (0.6ms)[0m  SELECT  "duties".* FROM "duties" WHERE "duties"."username" = ? LIMIT 1  [["username", "krasikovaf"]]
