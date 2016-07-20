@@ -35,6 +35,7 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 	else
 		current_duty = Duty.find_by(username: message.from.username)
 		if current_duty
+			p message.text =~ /(закончил|окончил|завершил)/
 			if time_values[2] > 20 and time_values[2] < 22 and !current_duty.evening_greeting and 
 			  message.text =~ /(на смене|начал|на дежурстве|заступил)/i
       				bot.api.send_message(chat_id: message.chat.id, text: "Удачи")
