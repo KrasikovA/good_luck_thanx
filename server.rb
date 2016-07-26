@@ -9,15 +9,14 @@ class Server
             bot.listen do |message|
                 message_text = message.text
                 messenger = Messenger.new(bot,message.chat.id)
-                if message_text == '/add_duty' and !is_response
-                    messenger.say('Введите username дежурного')
-                    is_response = true  
-                end
-		if is_response
+                if is_response
 		   create_duty(message_text,messenger)
                    is_response = false  
 		else
-		    if message_text == '/help'
+		    if message_text == '/add_duty' and !is_response
+                        messenger.say('Введите username дежурного')
+			is_response = true  
+		    elsif message_text == '/help'
 			messenger.say(Messenger::HELP)
 	            elsif message_text == '/say_thanx'
 			messenger.say('Спасибо')
@@ -38,7 +37,7 @@ class Server
     private
     def self.create_duty(name, messenger)
         if Duty.new(username: name).valid?
-	    Duty.new(username: name)
+	    Duty.create(username: name)
             messenger.say("Дежурный #{name} успешно создан")
         else
             messenger.say("Кажется пользователь #{name} уже существует")
