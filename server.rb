@@ -20,10 +20,10 @@ class Server
 			messenger.say(Messenger::HELP)
 	            elsif message_text == '/say_thanx'
 			messenger.say('Спасибо')
-                        messenger.show('images/sleepy_cat.jpg','image/jpeg')
+                        messenger.show
 	            elsif message_text == '/say_good_luck'
 			messenger.say('Удачи')
-                        messenger.show('images/cat_in_helmet.jpg','image/jpeg')
+                        messenger.show
 	            else
 			if current_duty = Duty.find_by(username: message.from.username)
 			    yield message,messenger,current_duty
