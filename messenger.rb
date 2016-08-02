@@ -8,6 +8,7 @@ class Messenger
         @chat_id = chat_id
 	FlickRaw.api_key=ENV["FLICKR_KEY"] 
 	FlickRaw.shared_secret=ENV["FLICKR_SECRET"]
+
     end
 
     def say(text)
