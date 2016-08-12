@@ -5,6 +5,7 @@ EVENING_GREETING_END = 23
 MORNING_GREETING_START = 8
 MORNING_GREETING_END = 10
 
+
 Server.run do |message, messenger, current_duty|
 	time = Time.new
 	time_values = time.to_a

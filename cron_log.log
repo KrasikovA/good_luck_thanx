@@ -1,0 +1,1 @@
+D, [2016-08-13T01:53:12.134267 #29011] DEBUG -- :   [1m[35mSQL (89.1ms)[0m  [1m[33mUPDATE "duties" SET "morning_greeting" = 't', "evening_greeting" = 'f'[0m

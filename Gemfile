@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
+gem 'rake'
+gem 'activerecord'
+gem 'sqlite3'
 gem 'telegram-bot-ruby'
 gem 'image_suckr'
 gem 'google-search'
 gem 'google-api-client', '0.9'
 gem 'rspec'
 gem 'flickraw'
+gem 'whenever', :require => false
