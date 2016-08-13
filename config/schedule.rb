@@ -13,6 +13,9 @@ end
 every 1.day, :at => '11 pm' do
   rake "whenever:set_evening_default"
 end
+every 10.minutes do
+ rake "whenever:reboot_bot"
+end
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"

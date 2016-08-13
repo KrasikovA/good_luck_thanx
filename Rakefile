@@ -14,4 +14,12 @@ namespace :whenever do
   task :set_evening_default do
     Duty.update_all(morning_greeting: false, evening_greeting: true)
   end
+  task :reboot_bot do
+    bot_pid = File.read("pid")
+    begin
+      Process.kill(0,bot_pid.to_i)
+    rescue Errno::ESRCH
+      system "/home/deployer/apps/good_luck_thanx/run_bot.sh"
+    end
+  end
 end
